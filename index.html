@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>HTML Canvas</title>
+		<script
+			src="https://kit.fontawesome.com/e96691685a.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="CSS.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="cursor"></div>
+		<div class="container">
+			<div class="canvas">
+				<h1 id="title">start drawing here :)</h1>
+				<canvas id="myCanvas"></canvas>
+			</div>
+			<div class="controls">
+				<div class="title">
+					<h3>tools</h3>
+				</div>
+				<div class="control">
+					<i class="fas fa-paint-brush fa-lg" id="pen"></i>
+				</div>
+				<div class="control">
+					<i class="fas fa-eraser fa-lg" id="eraser"></i>
+				</div>
+				<div class="control">
+					<input
+						type="range"
+						name="brush-size"
+						id="brush-size"
+						min="2"
+						max="50"
+						value="5"
+						orient="vertical"
+					/>
+				</div>
+				<div class="control">
+					<i class="fas fa-sticky-note fa-lg" id="clear"></i>
+				</div>
+				<div class="control">
+					<input
+						type="color"
+						name="background-color"
+						id="background-color"
+						value="red"
+					/>
+					<input type="color" name="brush-color" id="brush-color" value="red" />
+				</div>
+			</div>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+</html>
